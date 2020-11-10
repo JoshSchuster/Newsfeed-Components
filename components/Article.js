@@ -88,7 +88,7 @@ const data = [
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
   },
   {
-    title: 'Presidential Election 2020',
+    title: 'Samuel L Jackson Ipsum',
     date: 'Nov 3rd, 2020',
     firstParagraph: `The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is 
           he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and 
@@ -96,12 +96,30 @@ const data = [
           destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.`,
 
     secondParagraph: `Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' 
-          house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what 
+          house, fuckin' up the way the motherfucker talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what 
           I'm sayin'?`,
 
     thirdParagraph: `Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. 
           That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we 
           drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.`
+  },
+  {
+    title: 'Dalaipsum',
+    date: 'Nov 5th, 2020',
+    firstParagraph: `If each of us can learn to relate to each other more out of compassion, with a sense of connection to each other and a deep recognition of 
+          our common humanity, and more important, to teach this to our children, I believe that this can go a long way in reducing many of the conflicts and 
+          problems that we see today.`,
+
+    secondParagraph: `If we think only of ourselves, forget about other people, then our minds occupy very small area. Inside that small area, even tiny problem 
+          appears very big. But the moment you develop a sense of concern for others, you realize that, just like ourselves, they also want happiness; they also 
+          want satisfaction. When you have this sense of concern, your mind automatically widens. At this point, your own problems, even big problems, will not 
+          be so significant. The result? Big increase in peace of mind. So, if you think only of yourself, only your own happiness, the result is actually less 
+          happiness. You get more anxiety, more fear.`,
+
+    thirdParagraph: `It is time to develop a big 'US', rather than the old 'us and them' that lets us to exploit and bully others on a personal level, and on an 
+          international level to wage war. The East must see the West as part of 'US' and the North must come to feel that the South is part of 'US'. We should 
+          include the entire world in our concern, wishing all humanity well. If we can do that there will be no room for hatred, thinking of others as enemies. 
+          And we will achieve this through education, not through prayer.`
   }
 ];
 
