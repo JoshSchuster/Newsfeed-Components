@@ -131,6 +131,10 @@ const data = [
     const span = document.createElement('span')
     span.classList.add('expandButton')
     span.textContent = '+'
+    //when the span is clicked it toggles the class "article-open" on the div "div.article"
+    span.addEventListener('click', event => {
+      returnDiv.classList.toggle('article-open')
+    })
     returnDiv.appendChild(span)
 
     return returnDiv
@@ -139,8 +143,10 @@ const data = [
   /*
   Step 2: Still inside `articleMaker`, add an event listener to the span.expandButton.
   This listener should toggle the class 'article-open' on div.article.
+  -complete
 
   Step 3: Don't forget to return something from your function!
+  -complete
 
   Step 4: Outside your function now, loop over the data. At each iteration you'll use your component
   to create a div.article element and append it to the DOM inside div.articles (see index.html).
