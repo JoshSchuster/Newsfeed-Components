@@ -26,6 +26,7 @@ let menuItems = [
 
     const ul = document.createElement('ul')
     
+    //step 2
     menuItems.forEach(item => {
       const li = document.createElement('li')
       li.textContent = item
@@ -33,6 +34,9 @@ let menuItems = [
     })
     
     returnDiv.appendChild(ul)
+
+    //step 3
+    document.querySelector('.menu-button')
 
     return returnDiv
   }
@@ -42,6 +46,7 @@ let menuItems = [
 //   -complete
 
 //   Step 3: Still inside your function, select from the DOM the menu button (the element with a class of 'menu-button').
+//   -complete
 
 //   Step 4: Add a click event listener to the menu button. When clicked it should toggle the class 'menu--open' on div.menu (your div with a 'menu' class).
 
