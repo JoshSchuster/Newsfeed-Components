@@ -39,6 +39,7 @@ let menuItems = [
 
 //   Step 2: Inside the function, iterate over the array creating a list item <li> element for each item in the array.
 //   Add those items to the <ul>
+//   -complete
 
 //   Step 3: Still inside your function, select from the DOM the menu button (the element with a class of 'menu-button').
 
