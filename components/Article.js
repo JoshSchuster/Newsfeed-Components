@@ -86,6 +86,22 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+  {
+    title: 'Presidential Election 2020',
+    date: 'Nov 3rd, 2020',
+    firstParagraph: `The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is 
+          he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and 
+          the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and 
+          destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.`,
+
+    secondParagraph: `Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' 
+          house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what 
+          I'm sayin'?`,
+
+    thirdParagraph: `Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. 
+          That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we 
+          drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.`
   }
 ];
 
@@ -160,4 +176,4 @@ const data = [
   
 //   Step 5: Try adding new article object to the data array. Make sure it is in the same format as the others.
 //   Refresh the page to see the new article.
-// */
+//   -complete 
