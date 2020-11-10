@@ -86,6 +86,40 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+  {
+    title: 'Samuel L Jackson Ipsum',
+    date: 'Nov 3rd, 2020',
+    firstParagraph: `The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is 
+          he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and 
+          the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and 
+          destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.`,
+
+    secondParagraph: `Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' 
+          house, fuckin' up the way the motherfucker talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what 
+          I'm sayin'?`,
+
+    thirdParagraph: `Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. 
+          That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we 
+          drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.`
+  },
+  {
+    title: 'Dalaipsum',
+    date: 'Nov 5th, 2020',
+    firstParagraph: `If each of us can learn to relate to each other more out of compassion, with a sense of connection to each other and a deep recognition of 
+          our common humanity, and more important, to teach this to our children, I believe that this can go a long way in reducing many of the conflicts and 
+          problems that we see today.`,
+
+    secondParagraph: `If we think only of ourselves, forget about other people, then our minds occupy very small area. Inside that small area, even tiny problem 
+          appears very big. But the moment you develop a sense of concern for others, you realize that, just like ourselves, they also want happiness; they also 
+          want satisfaction. When you have this sense of concern, your mind automatically widens. At this point, your own problems, even big problems, will not 
+          be so significant. The result? Big increase in peace of mind. So, if you think only of yourself, only your own happiness, the result is actually less 
+          happiness. You get more anxiety, more fear.`,
+
+    thirdParagraph: `It is time to develop a big 'US', rather than the old 'us and them' that lets us to exploit and bully others on a personal level, and on an 
+          international level to wage war. The East must see the West as part of 'US' and the North must come to feel that the South is part of 'US'. We should 
+          include the entire world in our concern, wishing all humanity well. If we can do that there will be no room for hatred, thinking of others as enemies. 
+          And we will achieve this through education, not through prayer.`
   }
 ];
 
@@ -101,16 +135,63 @@ const data = [
     {three separate paragraph elements}
 
     <span class="expandButton">+</span>
-  </div>
+  </div>*/
 
+  function articleMaker(article) {
+    const returnDiv = document.createElement('div')
+    returnDiv.classList.add('article')
+
+    const h2 = document.createElement('h2')
+    h2.textContent = article.title
+    returnDiv.appendChild(h2)
+
+    const p1 = document.createElement('p')
+    p1.classList.add('date')
+    p1.textContent = article.date
+    returnDiv.appendChild(p1)
+
+    const p2 = document.createElement('p')
+    p2.textContent = article.firstParagraph
+    returnDiv.appendChild(p2)
+
+    const p3 = document.createElement('p')
+    p3.textContent = article.secondParagraph
+    returnDiv.appendChild(p3)
+
+    const p4 = document.createElement('p')
+    p4.textContent = article.thirdParagraph
+    returnDiv.appendChild(p4)
+
+    const span = document.createElement('span')
+    span.classList.add('expandButton')
+    span.textContent = '+'
+    //when the span is clicked it toggles the class "article-open" on the div "div.article"
+    span.addEventListener('click', event => {
+      returnDiv.classList.toggle('article-open')
+    })
+    returnDiv.appendChild(span)
+
+    return returnDiv
+  }
+
+  /*
   Step 2: Still inside `articleMaker`, add an event listener to the span.expandButton.
   This listener should toggle the class 'article-open' on div.article.
+  -complete
 
   Step 3: Don't forget to return something from your function!
+  -complete
 
   Step 4: Outside your function now, loop over the data. At each iteration you'll use your component
-  to create a div.article element and append it to the DOM inside div.articles (see index.html).
+  to create a div.article element and append it to the DOM inside div.articles (see index.html). */
 
-  Step 5: Try adding new article object to the data array. Make sure it is in the same format as the others.
-  Refresh the page to see the new article.
-*/
+  const articlesDivSel = document.querySelector('div.articles')
+
+  data.forEach(item => {
+    let articleDiv = articleMaker(item)
+    articlesDivSel.appendChild(articleDiv)
+  })
+  
+//   Step 5: Try adding new article object to the data array. Make sure it is in the same format as the others.
+//   Refresh the page to see the new article.
+//   -complete 
