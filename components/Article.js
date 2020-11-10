@@ -149,8 +149,15 @@ const data = [
   -complete
 
   Step 4: Outside your function now, loop over the data. At each iteration you'll use your component
-  to create a div.article element and append it to the DOM inside div.articles (see index.html).
+  to create a div.article element and append it to the DOM inside div.articles (see index.html). */
 
-  Step 5: Try adding new article object to the data array. Make sure it is in the same format as the others.
-  Refresh the page to see the new article.
-*/
+  const articlesDivSel = document.querySelector('div.articles')
+
+  data.forEach(item => {
+    let articleDiv = articleMaker(item)
+    articlesDivSel.appendChild(articleDiv)
+  })
+  
+//   Step 5: Try adding new article object to the data array. Make sure it is in the same format as the others.
+//   Refresh the page to see the new article.
+// */
